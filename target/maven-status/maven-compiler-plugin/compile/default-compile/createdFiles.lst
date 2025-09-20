@@ -1,0 +1,5 @@
+com\project\actions\UtilityActionHelper.class
+com\project\report\AutomationReporter.class
+com\project\hooks\Hooks.class
+com\project\base\BrowserManager.class
+com\project\actions\ValidationActionHelper.class
