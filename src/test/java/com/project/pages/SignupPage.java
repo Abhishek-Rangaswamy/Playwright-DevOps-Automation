@@ -9,10 +9,14 @@ public class SignupPage extends BasePage {
     private Locator emailTextField;
     private Locator passwordTextField;
     private Locator seleniumTextOption;
+    private Locator javaTextOption;
     private Locator maleRadioButton;
     private Locator femaleRadioButton;
     private Locator selectStateDropdownElement;
+    private Locator selectStateOptionKarnataka;
+    private Locator hobbies;
     private Locator hobbiesOptionPlaying;
+    private Locator hobbiesOptionReading;
     private Locator signupButton;
 
     public SignupPage() {
@@ -21,10 +25,14 @@ public class SignupPage extends BasePage {
         this.emailTextField = page.getByPlaceholder("Email");
         this.passwordTextField = page.getByPlaceholder("Password");
         this.seleniumTextOption = page.getByText("Selenium");
+        this.javaTextOption = page.getByText("AWS");
         this.maleRadioButton = page.locator("//input[@type='radio' and @value='Male']");
         this.femaleRadioButton = page.locator("//input[@type='radio' and @value='Female']");
-        this.selectStateDropdownElement = page.getByTestId("state");
-        this.hobbiesOptionPlaying = page.getByText("Playing");
+        this.selectStateDropdownElement = page.locator("#state");
+        this.selectStateOptionKarnataka = page.getByText("Karnataka");
+        this.hobbies = page.locator("#hobbies");
+        this.hobbiesOptionPlaying = hobbies.getByText("Playing");
+        this.hobbiesOptionReading = hobbies.getByText("Reading");
         this.signupButton = page.locator(".submit-btn");
     }
 
@@ -48,6 +56,10 @@ public class SignupPage extends BasePage {
         return seleniumTextOption;
     }
 
+    public Locator getJavaTextOption() {
+        return javaTextOption;
+    }
+
     public Locator getMaleRadioButton() {
         return maleRadioButton;
     }
@@ -60,8 +72,28 @@ public class SignupPage extends BasePage {
         return selectStateDropdownElement;
     }
 
+    public Locator getStateDropdown() {
+        return selectStateDropdownElement;
+    }
+
+    public Locator getStateOptionKarnataka() {
+        return selectStateOptionKarnataka;
+    }
+
+    public Locator getStateOption(String stateName) {
+        return page.getByText(stateName);
+    }
+
+    public Locator getHobbies() {
+        return hobbies;
+    }
+
     public Locator getHobbiesOptionPlaying() {
         return hobbiesOptionPlaying;
+    }
+
+    public Locator getHobbiesOptionReading() {
+        return hobbiesOptionReading;
     }
 
     public Locator getSignupButton() {

@@ -1,4 +1,97 @@
 -------------------------------------------------------------------------------
 Test set: com.project.runtest.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.389 s - in com.project.runtest.TestRunner
+Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 25.941 s <<< FAILURE! - in com.project.runtest.TestRunner
+Automate Course Navigation and Validation.Open the application and verify the signup page is displayed  Time elapsed: 6.156 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Locator expected to contain regex: Sign Up
+Received: <element(s) not found>
+
+Call log:
+  - Assert "containsText" with timeout 5000ms
+  - waiting for locator("//h2[text()='Sign Up']")
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:50)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:76)
+	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:1096)
+	at com.project.actions.ValidationActionHelper.verifyTitleOfThePage(ValidationActionHelper.java:11)
+	at com.project.stepdefinitions.CoursesStepDefinitions.verifyThatTheSignupPageIsDisplayed(CoursesStepDefinitions.java:40)
+	at ✽.verify that the signup page is displayed(file:///C:/Users/AbhishekRangaswamy/Documents/Automation/AutomationProject/src/test/resources/Features/Courses.feature:6)
+
+Automate Course Navigation and Validation.Successful account creation with valid details  Time elapsed: 0.034 s  <<< ERROR!
+com.microsoft.playwright.impl.TargetClosedError: 
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:300)
+	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:244)
+	at com.microsoft.playwright.Locator.fill(Locator.java:3105)
+	at com.project.actions.UtilityActionHelper.fillValueInTextField(UtilityActionHelper.java:9)
+	at com.project.stepdefinitions.CoursesStepDefinitions.the_user_provides_a_unique_username(CoursesStepDefinitions.java:55)
+	at ✽.the user provides a unique username(file:///C:/Users/AbhishekRangaswamy/Documents/Automation/AutomationProject/src/test/resources/Features/Courses.feature:9)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 8 more
+
+Automate Course Navigation and Validation.Login with newly created account  Time elapsed: 0.022 s  <<< ERROR!
+com.microsoft.playwright.impl.TargetClosedError: 
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.LocatorImpl.expectImpl(LocatorImpl.java:662)
+	at com.microsoft.playwright.impl.LocatorImpl.lambda$expect$8(LocatorImpl.java:648)
+	at com.microsoft.playwright.impl.ChannelOwner.withTitle(ChannelOwner.java:98)
+	at com.microsoft.playwright.impl.LocatorImpl.expect(LocatorImpl.java:648)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:61)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:50)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:76)
+	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:1096)
+	at com.project.actions.ValidationActionHelper.verifyTitleOfThePage(ValidationActionHelper.java:11)
+	at com.project.stepdefinitions.CoursesStepDefinitions.the_user_is_on_the_login_page(CoursesStepDefinitions.java:133)
+	at ✽.the user is on the login page(file:///C:/Users/AbhishekRangaswamy/Documents/Automation/AutomationProject/src/test/resources/Features/Courses.feature:22)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more
+

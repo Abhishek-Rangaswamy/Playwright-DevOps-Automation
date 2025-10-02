@@ -6,6 +6,7 @@ import com.project.actions.UtilityActionHelper;
 public class CommonPageObjects {
     private LoginPage loginPage;
     private SignupPage signupPage;
+    private DashboardPage dashboardPage;
     private UtilityActionHelper utilityActionHelper;
     private ValidationActionHelper validationHelper;
 
@@ -14,7 +15,7 @@ public class CommonPageObjects {
         this.signupPage = new SignupPage();
         this.utilityActionHelper = new UtilityActionHelper();
         this.validationHelper = new ValidationActionHelper();
-
+        this.dashboardPage = new DashboardPage();
     }
 
     public LoginPage getLoginPage() {
@@ -31,5 +32,9 @@ public class CommonPageObjects {
 
     public UtilityActionHelper getUtilityActionHelper() {
         return utilityActionHelper;
+    }
+
+    public DashboardPage getDashboardPage() {
+        return dashboardPage;
     }
 }

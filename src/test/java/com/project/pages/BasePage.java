@@ -15,6 +15,7 @@ public abstract class BasePage {
 
     /**
      * Navigate to a specific URL.
+     * 
      * @param url The URL to navigate to.
      */
     public void navigateTo(String url) {
@@ -23,6 +24,7 @@ public abstract class BasePage {
 
     /**
      * Get the title of the current page.
+     * 
      * @return Page title as a string.
      */
     public String getPageTitle() {

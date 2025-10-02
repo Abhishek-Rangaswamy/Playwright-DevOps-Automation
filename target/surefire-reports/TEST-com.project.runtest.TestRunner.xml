@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.project.runtest.TestRunner" time="30.389" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.project.runtest.TestRunner" time="25.941" tests="3" errors="2" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\AbhishekRangaswamy\AppData\Local\Temp\surefire5871803253697449994\surefirebooter-20250920220710137_3.jar C:\Users\AbhishekRangaswamy\AppData\Local\Temp\surefire5871803253697449994 2025-09-20T22-07-09_967-jvmRun1 surefire-20250920220710137_1tmp surefire_0-20250920220710137_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\AbhishekRangaswamy\AppData\Local\Temp\surefire16716045419355174928\surefirebooter-20251002204209078_3.jar C:\Users\AbhishekRangaswamy\AppData\Local\Temp\surefire16716045419355174928 2025-10-02T20-42-08_845-jvmRun1 surefire-20251002204209078_1tmp surefire_0-20251002204209078_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\AbhishekRangaswamy\Documents\Automation\AutomationProject\target\test-classes;C:\Users\AbhishekRangaswamy\Documents\Automation\AutomationProject\target\classes;C:\Users\AbhishekRangaswamy\.m2\repository\com\microsoft\playwright\playwright\1.53.0\playwright-1.53.0.jar;C:\Users\AbhishekRangaswamy\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\AbhishekRangaswamy\.m2\repository\com\microsoft\playwright\driver\1.53.0\driver-1.53.0.jar;C:\Users\AbhishekRangaswamy\.m2\repository\com\microsoft\playwright\driver-bundle\1.53.0\driver-bundle-1.53.0.jar;C:\Users\AbhishekRangaswamy\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\AbhishekRangaswamy\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\AbhishekRangaswamy\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\cucumber-java\7.22.1\cucumber-java-7.22.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\cucumber-junit\7.22.1\cucumber-junit-7.22.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\cucumber-core\7.22.1\cucumber-core-7.22.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\cucumber-gherkin\7.22.1\cucumber-gherkin-7.22.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.22.1\cucumber-gherkin-messages-7.22.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\gherkin\32.1.1\gherkin-32.1.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\datatable\7.22.1\datatable-7.22.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\cucumber-plugin\7.22.1\cucumber-plugin-7.22.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\docstring\7.22.1\docstring-7.22.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\html-formatter\21.10.1\html-formatter-21.10.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\AbhishekRangaswamy\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\AbhishekRangaswamy\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\AbhishekRangaswamy\.m2\repository\com\aventstack\extentreports-cucumber4-adapter\1.2.1\extentreports-cucumber4-adapter-1.2.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\com\aventstack\klov-reporter\5.0.1\klov-reporter-5.0.1.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\AbhishekRangaswamy\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\AbhishekRangaswamy\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\AbhishekRangaswamy\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\AbhishekRangaswamy\AppData\Local\Temp\surefire5871803253697449994\surefirebooter-20250920220710137_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\AbhishekRangaswamy\AppData\Local\Temp\surefire16716045419355174928\surefirebooter-20251002204209078_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -49,27 +49,219 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Terraform;C:\Users\AbhishekRangaswamy\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\AbhishekRangaswamy\AppData\Local\Programs\Python\Python313\;C:\Users\AbhishekRangaswamy\AppData\Local\Programs\Python\Launcher\;C:\Users\AbhishekRangaswamy\AppData\Local\Microsoft\WindowsApps;C:\Users\AbhishekRangaswamy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2025.1.2\bin;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.2\bin;;c:\Users\AbhishekRangaswamy\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Terraform;C:\Program Files\nodejs\;C:\Users\AbhishekRangaswamy\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\AbhishekRangaswamy\AppData\Local\Programs\Python\Python313\;C:\Users\AbhishekRangaswamy\AppData\Local\Programs\Python\Launcher\;C:\Users\AbhishekRangaswamy\AppData\Local\Microsoft\WindowsApps;C:\Users\AbhishekRangaswamy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2025.1.2\bin;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.2\bin;;C:\Users\AbhishekRangaswamy\AppData\Roaming\npm;c:\Users\AbhishekRangaswamy\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Open the application and verify the signup page is displayed" classname="Automate Course Navigation and Validation" time="3.053">
+  <testcase name="Open the application and verify the signup page is displayed" classname="Automate Course Navigation and Validation" time="6.156">
+    <failure message="Locator expected to contain regex: Sign Up&#10;Received: &lt;element(s) not found&gt;&#10;&#10;Call log:&#10;  - Assert &quot;containsText&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;//h2[text()=&apos;Sign Up&apos;]&quot;)" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+Locator expected to contain regex: Sign Up
+Received: <element(s) not found>
+
+Call log:
+  - Assert "containsText" with timeout 5000ms
+  - waiting for locator("//h2[text()='Sign Up']")
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:50)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:76)
+	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:1096)
+	at com.project.actions.ValidationActionHelper.verifyTitleOfThePage(ValidationActionHelper.java:11)
+	at com.project.stepdefinitions.CoursesStepDefinitions.verifyThatTheSignupPageIsDisplayed(CoursesStepDefinitions.java:40)
+	at ✽.verify that the signup page is displayed(file:///C:/Users/AbhishekRangaswamy/Documents/Automation/AutomationProject/src/test/resources/Features/Courses.feature:6)
+]]></failure>
     <system-out><![CDATA[✅ Browser launched
 
 Scenario: Open the application and verify the signup page is displayed                    # src/test/resources/Features/Courses.feature:4
   Given access the application URL "https://freelance-learn-automation.vercel.app/signup" # com.project.stepdefinitions.CoursesStepDefinitions.accessTheApplicationSignUpURL(java.lang.String)
   Then verify that the signup page is displayed                                           # com.project.stepdefinitions.CoursesStepDefinitions.verifyThatTheSignupPageIsDisplayed()
+      org.opentest4j.AssertionFailedError: Locator expected to contain regex: Sign Up
+      Received: <element(s) not found>
+      
+      Call log:
+        - Assert "containsText" with timeout 5000ms
+        - waiting for locator("//h2[text()='Sign Up']")
+      	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+      	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:50)
+      	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+      	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:76)
+      	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:1096)
+      	at com.project.actions.ValidationActionHelper.verifyTitleOfThePage(ValidationActionHelper.java:11)
+      	at com.project.stepdefinitions.CoursesStepDefinitions.verifyThatTheSignupPageIsDisplayed(CoursesStepDefinitions.java:40)
+      	at âœ½.verify that the signup page is displayed(file:///C:/Users/AbhishekRangaswamy/Documents/Automation/AutomationProject/src/test/resources/Features/Courses.feature:6)
 ]]></system-out>
   </testcase>
-  <testcase name="Successful account creation with valid details" classname="Automate Course Navigation and Validation" time="1.674">
+  <testcase name="Successful account creation with valid details" classname="Automate Course Navigation and Validation" time="0.034">
+    <error message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;TargetClosedError&#10;  stack=&apos;TargetClosedError: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)&#10;    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)&#10;    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)&#10;    at process.processImmediate (node:internal/timers:485:21)&#10;}" type="com.microsoft.playwright.impl.TargetClosedError"><![CDATA[com.microsoft.playwright.impl.TargetClosedError: 
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:300)
+	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:244)
+	at com.microsoft.playwright.Locator.fill(Locator.java:3105)
+	at com.project.actions.UtilityActionHelper.fillValueInTextField(UtilityActionHelper.java:9)
+	at com.project.stepdefinitions.CoursesStepDefinitions.the_user_provides_a_unique_username(CoursesStepDefinitions.java:55)
+	at ✽.the user provides a unique username(file:///C:/Users/AbhishekRangaswamy/Documents/Automation/AutomationProject/src/test/resources/Features/Courses.feature:9)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 8 more
+]]></error>
     <system-out><![CDATA[
-Scenario: Successful account creation with valid details # src/test/resources/Features/Courses.feature:8
-  Given the user provides a unique username              # com.project.stepdefinitions.CoursesStepDefinitions.the_user_provides_a_unique_username()
-  And enters a valid email address                       # com.project.stepdefinitions.CoursesStepDefinitions.enters_a_valid_email_address()
-  And sets a secure password                             # com.project.stepdefinitions.CoursesStepDefinitions.sets_a_secure_password()
+Scenario: Successful account creation with valid details                               # src/test/resources/Features/Courses.feature:8
+  Given the user provides a unique username                                            # com.project.stepdefinitions.CoursesStepDefinitions.the_user_provides_a_unique_username()
+      com.microsoft.playwright.impl.TargetClosedError: Error {
+        message='Target page, context or browser has been closed
+        name='TargetClosedError
+        stack='TargetClosedError: Target page, context or browser has been closed
+          at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+          at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+          at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+          at process.processImmediate (node:internal/timers:485:21)
+      }
+      	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+      	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+      	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+      	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+      	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:300)
+      	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:244)
+      	at com.microsoft.playwright.Locator.fill(Locator.java:3105)
+      	at com.project.actions.UtilityActionHelper.fillValueInTextField(UtilityActionHelper.java:9)
+      	at com.project.stepdefinitions.CoursesStepDefinitions.the_user_provides_a_unique_username(CoursesStepDefinitions.java:55)
+      	at âœ½.the user provides a unique username(file:///C:/Users/AbhishekRangaswamy/Documents/Automation/AutomationProject/src/test/resources/Features/Courses.feature:9)
+      Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+        message='Target page, context or browser has been closed
+        name='TargetClosedError
+        stack='TargetClosedError: Target page, context or browser has been closed
+          at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+          at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+          at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+          at process.processImmediate (node:internal/timers:485:21)
+      }
+      	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+      	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+      	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+      	... 8 more
+  And enters a valid email address                                                     # com.project.stepdefinitions.CoursesStepDefinitions.enters_a_valid_email_address()
+  And sets a secure password                                                           # com.project.stepdefinitions.CoursesStepDefinitions.sets_a_secure_password()
+  And selects "AWS" as the area of interest                                            # com.project.stepdefinitions.CoursesStepDefinitions.selects_as_the_area_of_interest(java.lang.String)
+  And ensures the gender "Male" option is chosen                                       # com.project.stepdefinitions.CoursesStepDefinitions.ensures_the_gender_option_is_chosen(java.lang.String)
+  And scroll to the bottom of the page                                                 # com.project.stepdefinitions.CoursesStepDefinitions.scroll_to_the_bottom_of_the_page()
+  And selects "Karnataka" from the state dropdown                                      # com.project.stepdefinitions.CoursesStepDefinitions.selects_from_the_state_dropdown(java.lang.String)
+  And chooses multiple hobbies including "Playing" and "Reading"                       # com.project.stepdefinitions.CoursesStepDefinitions.chooses_multiple_hobbies_including_and(java.lang.String,java.lang.String)
+  When the user clicks the signup button                                               # com.project.stepdefinitions.CoursesStepDefinitions.the_user_clicks_the_signup_button()
+  Then the system should redirect the user to the login page                           # com.project.stepdefinitions.CoursesStepDefinitions.the_system_should_redirect_the_user_to_the_login_page()
+  And a toast success message "Signup successfully, Please login!" should be displayed # com.project.stepdefinitions.CoursesStepDefinitions.a_toast_success_message_should_be_displayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Login with newly created account" classname="Automate Course Navigation and Validation" time="0.022">
+    <error message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;TargetClosedError&#10;  stack=&apos;TargetClosedError: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)&#10;    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)&#10;    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)&#10;    at process.processImmediate (node:internal/timers:485:21)&#10;}" type="com.microsoft.playwright.impl.TargetClosedError"><![CDATA[com.microsoft.playwright.impl.TargetClosedError: 
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.LocatorImpl.expectImpl(LocatorImpl.java:662)
+	at com.microsoft.playwright.impl.LocatorImpl.lambda$expect$8(LocatorImpl.java:648)
+	at com.microsoft.playwright.impl.ChannelOwner.withTitle(ChannelOwner.java:98)
+	at com.microsoft.playwright.impl.LocatorImpl.expect(LocatorImpl.java:648)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:61)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:50)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:76)
+	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:1096)
+	at com.project.actions.ValidationActionHelper.verifyTitleOfThePage(ValidationActionHelper.java:11)
+	at com.project.stepdefinitions.CoursesStepDefinitions.the_user_is_on_the_login_page(CoursesStepDefinitions.java:133)
+	at ✽.the user is on the login page(file:///C:/Users/AbhishekRangaswamy/Documents/Automation/AutomationProject/src/test/resources/Features/Courses.feature:22)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+    at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more
+]]></error>
+    <system-out><![CDATA[
+Scenario: Login with newly created account          # src/test/resources/Features/Courses.feature:21
+  Given the user is on the login page               # com.project.stepdefinitions.CoursesStepDefinitions.the_user_is_on_the_login_page()
+      com.microsoft.playwright.impl.TargetClosedError: Error {
+        message='Target page, context or browser has been closed
+        name='TargetClosedError
+        stack='TargetClosedError: Target page, context or browser has been closed
+          at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+          at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+          at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+          at process.processImmediate (node:internal/timers:485:21)
+      }
+      	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+      	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+      	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+      	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+      	at com.microsoft.playwright.impl.LocatorImpl.expectImpl(LocatorImpl.java:662)
+      	at com.microsoft.playwright.impl.LocatorImpl.lambda$expect$8(LocatorImpl.java:648)
+      	at com.microsoft.playwright.impl.ChannelOwner.withTitle(ChannelOwner.java:98)
+      	at com.microsoft.playwright.impl.LocatorImpl.expect(LocatorImpl.java:648)
+      	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:61)
+      	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:50)
+      	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+      	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:76)
+      	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:1096)
+      	at com.project.actions.ValidationActionHelper.verifyTitleOfThePage(ValidationActionHelper.java:11)
+      	at com.project.stepdefinitions.CoursesStepDefinitions.the_user_is_on_the_login_page(CoursesStepDefinitions.java:133)
+      	at âœ½.the user is on the login page(file:///C:/Users/AbhishekRangaswamy/Documents/Automation/AutomationProject/src/test/resources/Features/Courses.feature:22)
+      Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+        message='Target page, context or browser has been closed
+        name='TargetClosedError
+        stack='TargetClosedError: Target page, context or browser has been closed
+          at DispatcherConnection.dispatch (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\dispatchers\dispatcher.js:243:69)
+          at transport.onmessage (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\cli\driver.js:53:59)
+          at Immediate._onImmediate (C:\Users\ABHISH~1\AppData\Local\Temp\playwright-java-9180797281084929694\package\lib\server\utils\pipeTransport.js:76:16)
+          at process.processImmediate (node:internal/timers:485:21)
+      }
+      	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+      	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+      	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+      	... 14 more
+  When the user enters the registered email address # com.project.stepdefinitions.CoursesStepDefinitions.the_user_enters_the_registered_email_address()
+  And inputs the correct password                   # com.project.stepdefinitions.CoursesStepDefinitions.inputs_the_correct_password()
+  And clicks the signin button                      # com.project.stepdefinitions.CoursesStepDefinitions.clicks_the_signin_button()
+  Then validate the page displays "Welcome" message # com.project.stepdefinitions.CoursesStepDefinitions.validate_the_page_displays_message(java.lang.String)
 ]]></system-out>
   </testcase>
 </testsuite>

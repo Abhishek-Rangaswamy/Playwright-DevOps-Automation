@@ -7,10 +7,15 @@ public class testDataHelper {
     public static final TestDataStore USERNAME = TestDataStore.INSTANCE;
     public static final TestDataStore EMAIL = TestDataStore.INSTANCE;
     public static final TestDataStore PASSWORD = TestDataStore.INSTANCE;
+    private static boolean initialized = false;
 
     public void populateTestData() {
-        USERNAME.setUsername(faker.name().fullName());
-        EMAIL.setEmail(faker.internet().emailAddress());
-        PASSWORD.setPassword(faker.internet().password(5, 10, true, true));
+        if (!initialized) {
+            String username = faker.name().firstName() + " " + faker.name().lastName();
+            USERNAME.setUsername(username);
+            EMAIL.setEmail(USERNAME.getUsername().toLowerCase().replace(" ", ".") + "@example.com");
+            PASSWORD.setPassword(faker.internet().password(6, 10, true, true));
+            initialized = true;
+        }
     }
 }

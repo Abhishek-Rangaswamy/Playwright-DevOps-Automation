@@ -1,6 +1,9 @@
 package com.project.base;
 
+import java.util.Arrays;
+
 import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
@@ -11,6 +14,7 @@ import com.microsoft.playwright.Playwright;
 public class BrowserManager {
     private static BrowserManager instance;
     private Playwright playwright;
+    private BrowserContext context;
     private Browser browser;
     private Page page;
 
@@ -20,6 +24,7 @@ public class BrowserManager {
 
     /**
      * Get the singleton instance of BrowserManager.
+     * 
      * @return BrowserManager instance
      */
     public static synchronized BrowserManager getInstance() {
@@ -31,6 +36,7 @@ public class BrowserManager {
 
     /**
      * Open a browser based on the specified type.
+     * 
      * @param browserType Type of browser (e.g., chrome, firefox)
      */
     public void openBrowser(String browserType) {
@@ -41,24 +47,30 @@ public class BrowserManager {
                 case "chrome":
                     browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                             .setHeadless(false)
-                            .setSlowMo(500));
+                            .setArgs(Arrays.asList("--start-maximized")) // maximize the window
+                            .setSlowMo(1000));
                     break;
                 case "firefox":
                     browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
                             .setHeadless(false)
-                            .setSlowMo(500));
+                            .setSlowMo(1000));
                     break;
                 default:
                     throw new IllegalArgumentException("Unsupported browser type: " + browserType);
             }
 
-            page = browser.newPage();
+            context = browser.newContext(
+                    new Browser.NewContextOptions()
+                            .setViewportSize(null) // important: let the window decide viewport
+            );
+            page = context.newPage();
             System.out.println("✅ Browser launched");
         }
     }
 
     /**
      * Get the current Playwright page instance.
+     * 
      * @return Page instance
      */
     public Page getPage() {
@@ -73,9 +85,12 @@ public class BrowserManager {
      */
     public void closeBrowser() {
         try {
-            if (page != null) page.close();
-            if (browser != null) browser.close();
-            if (playwright != null) playwright.close();
+            if (page != null)
+                page.close();
+            if (browser != null)
+                browser.close();
+            if (playwright != null)
+                playwright.close();
             System.out.println("❌ Browser closed");
         } catch (Exception e) {
             System.err.println("Error while closing browser: " + e.getMessage());
