@@ -24,7 +24,7 @@ public class LaunchOrangeHRMSteps {
 	public void the_user_opens_a_browser() {
 	    playwright = Playwright.create();
 	    browserType = playwright.chromium();
-	    browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
+	    browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true));
 	    context = browser.newContext();
 	    page = context.newPage();
 	}
