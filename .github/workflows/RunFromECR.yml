@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-name: Smart Dcoker Build & Deploy
+name: Smart Docker Build & Deploy
 
 # Controls when the workflow will run
 on:
