@@ -64,3 +64,24 @@ jobs:
 
           docker push \
           ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG
+
+      # 6️⃣ Pull existing image (ONLY when no build)
+      - name: Pull existing image from ECR
+        if: steps.changes.outputs.build_image == 'false'
+        run: |
+          docker pull \
+          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG
+
+      # 7️⃣ Stop old container
+      - name: Stop old container
+        run: |
+          docker stop playwright-container || true
+          docker rm playwright-container || true
+
+      # 8️⃣ Run container
+      - name: Run Docker container
+        run: |
+          docker run -d \
+          --name playwright-container \
+          -p 8080:8080 \
+          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG
